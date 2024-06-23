@@ -1,0 +1,26 @@
+#home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 3em;
+    color: #fff;
+}
+
+.animated-background {
+    background: linear-gradient(45deg, #FFE5B4 0%, #fecfef 100%);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
