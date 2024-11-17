@@ -1,0 +1,101 @@
+/* About Section Styling */
+#about-section {
+    padding: 60px 20px;
+    background-color: #333a44; /* Darker background to match #282c34 */
+    color: #e0e0e0; /* Light gray text for better readability */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+/* Section Headings */
+#about-section h2 {
+    font-size: 2.5em;
+    color: #61dafb; /* Accent color for the main heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about-section h3 {
+    font-size: 1.8em;
+    color: #61dafb;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #61dafb; /* Underline effect with accent color */
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+#about-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #b0b0b0; /* Softer gray for paragraphs */
+}
+
+/* List Styling */
+#about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#about-section ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #c0c0c0; /* Light gray for list items */
+}
+
+/* Links Styling */
+#about-section a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#about-section a:hover {
+    color: #80eaff; /* Slightly brighter shade on hover */
+}
+
+/* Button Styling */
+#about-section .connect-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #444b55; /* Dark button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#about-section .connect-btn:hover {
+    background-color: #61dafb;
+    color: #282c34; /* Dark text on hover for contrast */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    #about-section {
+        padding: 40px 10px;
+    }
+
+    #about-section h2 {
+        font-size: 2em;
+    }
+
+    #about-section h3 {
+        font-size: 1.5em;
+    }
+
+    #about-section p,
+    #about-section ul li {
+        font-size: 0.95em;
+    }
+}

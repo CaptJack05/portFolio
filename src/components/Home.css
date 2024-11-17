@@ -4,23 +4,32 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
     text-align: center;
+    color: #fff; /* Optional: Sets text color to white for better visibility */
+    overflow: hidden;
 }
 
-.animated-text {
-    font-size: 3em;
-    color: #fff;
-}
-
+/* Animated gradient background */
 .animated-background {
-    background: linear-gradient(45deg, #FFE5B4 0%, #fecfef 100%);
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
 }
 
+/* Animation keyframes for the gradient background */
 @keyframes gradientBackground {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Animated text styling */
+.animated-text {
+    font-size: 3em;
+    animation: textFade 1.5s ease-in-out infinite;
+}
+
+/* Animation keyframes for text fade */
+@keyframes textFade {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
 }

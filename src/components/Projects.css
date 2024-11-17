@@ -1,25 +1,108 @@
-.project-section {
-    padding: 20px;
+/* Projects Section */
+#projects-section {
+    padding: 40px 20px;
+    background-color: #282c34;
+    color: #e0e0e0;
     text-align: center;
 }
 
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+#projects-section h2 {
+    font-size: 2.5em;
+    color: #61dafb;
+    margin-bottom: 20px;
 }
 
-.project-item {
-    border: 1px solid #ddd;
-    border-radius: 5px;
+/* Carousel Container */
+.project-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #61dafb transparent;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #61dafb;
+    border: none;
+    border-radius: 50%;
     padding: 10px;
-    width: 200px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #282c34;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background-color: #218ac5;
+}
+
+/* Project Card */
+.project-card {
+    flex: 0 0 250px;
+    background-color: #333a44;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-image {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 15px;
+}
+
+.project-details h3 {
+    margin: 0;
+    color: #61dafb;
+    font-size: 1.2em;
+}
+
+.project-details p {
+    color: #b0b0b0;
+    margin: 10px 0;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #61dafb;
+}
+
+/* Scrollbar Styles */
+.project-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-container::-webkit-scrollbar-thumb {
+    background-color: #61dafb;
+    border-radius: 10px;
 }

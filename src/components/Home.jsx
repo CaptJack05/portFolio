@@ -1,21 +1,28 @@
-import React from 'react';
-import Typical from 'react-typical';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 
+const messages = [
+    'Welcome to My Website',
+    'I am Hem',
+    'A Developer',
+    'A Designer'
+];
+
 const Home = () => {
+    const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentMessageIndex(prevIndex => (prevIndex + 1) % messages.length);
+        }, 2000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <section id="home-section" className="animated-background">
             <h1 className="animated-text">
-                <Typical
-                    loop={Infinity}
-                    wrapper="b"
-                    steps={[
-                        'Welcome to My Website', 2000,
-                        'I am Yadi', 2000,
-                        'A Developer', 2000,
-                        'A Designer', 2000,
-                    ]}
-                />
+                {messages[currentMessageIndex]}
             </h1>
         </section>
     );
