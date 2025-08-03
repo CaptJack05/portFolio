@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Mail, Github, Linkedin, ExternalLink, Menu, X, Code, Palette, Smartphone, Calendar, MapPin, Award, BookOpen, User, FolderOpen, MessageCircle, Download, Instagram, ChevronRight, Star, Zap, Cpu, Wifi, Rocket, Trophy, GraduationCap, ArrowLeft, Clock, Tag } from 'lucide-react';
+import HemImage from './assets/Hem.jpg'
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -418,11 +419,13 @@ Smart homes are not just about convenience; they're about creating more efficien
           <div className="mb-8">
             <div className="w-40 h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
-                <img 
-                  src="https://drive.google.com/drive/folders/1GM41zuFAAJgNtSAgKN4HFcg-4GYUR-re" 
-                  alt="Hemchandra Jha" 
-                  className="w-full h-full object-cover rounded-full"
+                
+                <img
+                src={HemImage}
+                alt="Hemchandra Jha"
+                className="w-full h-full object-cover rounded-full"
                 />
+
               </div>
             </div>
           </div>
