@@ -419,7 +419,7 @@ Smart homes are not just about convenience; they're about creating more efficien
             <div className="w-40 h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
+                  src="https://drive.google.com/drive/folders/1GM41zuFAAJgNtSAgKN4HFcg-4GYUR-re" 
                   alt="Hemchandra Jha" 
                   className="w-full h-full object-cover rounded-full"
                 />
