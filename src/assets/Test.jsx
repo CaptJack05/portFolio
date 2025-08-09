@@ -1,28 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown,Twitter, Mail, Github, Linkedin, ExternalLink, Menu, X, Code, Palette, Smartphone, Calendar, MapPin, Award, BookOpen, User, FolderOpen, MessageCircle, Download, Instagram, ChevronRight, Star, Zap, Cpu, Wifi, Rocket, Trophy, GraduationCap, ArrowLeft, Clock, Tag, Briefcase, FileText, Eye, ArrowRight } from 'lucide-react';
+import { ChevronDown, Mail, Github, Linkedin, ExternalLink, Menu, X, Code, Palette, Smartphone, Calendar, MapPin, Award, BookOpen, User, FolderOpen, MessageCircle, Download, Instagram, ChevronRight, Star, Zap, Cpu, Wifi, Rocket, Trophy, GraduationCap, ArrowLeft, Clock, Tag, Briefcase, FileText, Eye, ArrowRight } from 'lucide-react';
 
 // Import all assets
 import HemImage from './assets/image.png';
 import Resume from './assets/Hemchandra-Resume.pdf';
-import DroneImage from './assets/ndrf-image.jpg';
-import SwarmDroneImage from './assets/iit-d-drone.jpg';
-import RFDroneImage from './assets/drone-custom.jpg';
-//import IoTImage from './assets/image.png';
-// Just use an online image instead of local import
-const IoTImage = "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop";
+import DroneImage from './assets/drone-project.jpg';
+import SwarmDroneImage from './assets/swarm-drone.jpg';
+import RFDroneImage from './assets/rf-drone.jpg';
+import IoTImage from './assets/iot-home.jpg';
+import EdTechImage from './assets/edtech.jpg';
+import BlogImage1 from './assets/blog1.jpg';
+import BlogImage2 from './assets/blog2.jpg';
+import BlogImage3 from './assets/blog3.jpg';
+import IITCertificate from './assets/iit-certificate.jpg';
+import NDRFCertificate from './assets/ndrf-certificate.jpg';
+import TechnofarmCertificate from './assets/technofarm-certificate.jpg';
 
-import EdTechImage from './assets/cfc-image.jpg';
-// import BlogImage1 from './assets/image.png';
-// import BlogImage2 from './assets/image.png';
-// import BlogImage3 from './assets/image.png';
-const BlogImage1 = "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=400&fit=crop";
-const BlogImage2 =  "https://images.unsplash.com/photo-1508614999368-9260051292e5?w=800&h=400&fit=crop";
-const BlogImage3 =  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop";
-import IITCertificate from './assets/iit-Delhi-certificate.jpg';
-import NDRFCertificate from './assets/NDRF-Certificate.jpg';
-import TechnofarmCertificate from './assets/image.png';
-
-
+// Fallback images for missing assets
+const fallbackImages = {
+  HemImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+  DroneImage: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop",
+  SwarmDroneImage: "https://images.unsplash.com/photo-1508614999368-9260051292e5?w=600&h=400&fit=crop",
+  RFDroneImage: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&h=400&fit=crop",
+  IoTImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+  EdTechImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+  BlogImage1: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=400&fit=crop",
+  BlogImage2: "https://images.unsplash.com/photo-1508614999368-9260051292e5?w=800&h=400&fit=crop",
+  BlogImage3: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
+  IITCertificate: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+  NDRFCertificate: "https://images.unsplash.com/photo-1606868306217-dbf5046868d2?w=800&h=600&fit=crop",
+  TechnofarmCertificate: "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=800&h=600&fit=crop"
+};
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -898,20 +906,6 @@ Smart homes are not just about convenience; they're about creating more efficien
                       <p className="text-sm">Follow my journey</p>
                     </div>
                   </a>
-                   <a
-      href="https://x.com/hcjha05?t=I5FR2PZOSuq2REe5Ho1O3w&s=08"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center space-x-4 text-gray-300 hover:text-white transition-colors group"
-    >
-      <div className="w-12 h-12 bg-gradient-to-r from-gray-800 to-black rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
-        <Twitter className="text-white" size={20} />
-      </div>
-      <div>
-        <p className="font-semibold">X (Twitter)</p>
-        <p className="text-sm">Follow my updates</p>
-      </div>
-    </a>
                 </div>
               </div>
             </div>
