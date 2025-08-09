@@ -506,7 +506,7 @@ Smart homes are not just about convenience; they're about creating more efficien
         
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <div className="mb-8">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1 shadow-2xl">
+            <div className="w-32 h-32 sm:w-60 sm:h-60 mx-auto mb-8 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
                 <img
                   src={HemImage || fallbackImages.HemImage}
@@ -517,9 +517,20 @@ Smart homes are not just about convenience; they're about creating more efficien
             </div>
           </div>
           
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
-            Hi, I'm Hemchandra Jha
-          </h1>
+<h1
+  className={
+    "text-3xl sm:text-5xl md:text-7xl font-bold mb-6 " +
+    "bg-gradient-to-r from-white via-purple-200 to-pink-200 " +
+    "bg-clip-text text-transparent " +
+    "overflow-hidden whitespace-nowrap border-r-4 border-purple-200 " +
+    "inline-block animate-typing"
+  }
+>
+  Hi, I'm Hemchandra Jha
+  
+</h1>
+
+
           
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4">
             Electronics & Communication Engineering Student
